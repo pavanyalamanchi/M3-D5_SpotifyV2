@@ -1,5 +1,5 @@
 window.onload = function() {
-    fetch("https://deezerdevs-deezer.p.rapidapi.com/search?q=eminem", {
+    fetch("https://deezerdevs-deezer.p.rapidapi.com/search?q=dua lipa", {
             "method": "GET",
             "headers": {
                 "x-rapidapi-key": "b721fb7cb7mshc145aec713358ffp15a997jsneacfc76db713",
@@ -8,7 +8,7 @@ window.onload = function() {
         })
         .then((response) => response.json())
         .then(jsonData => {
-            console.log(jsonData.data);
+            console.log(jsonData.data[0].artist.name);
 
             let albumName = document.getElementsByClassName('api-class1')
             for (let i = 0; i < albumName.length; i++) {
@@ -31,17 +31,25 @@ window.onload = function() {
              })*/
             let sessionValue = ''
             let sessionImage = ''
+            let sessionArtist = ''
+            let sessionXlImage = ''
             let selectedCard = document.getElementsByClassName('card-class')
             for (let i = 0; i < selectedCard.length; i++) {
                 selectedCard[i].addEventListener('click', function() {
                     sessionValue = jsonData.data[i].album.title
                     sessionImage = jsonData.data[i].album.cover_medium
+                    sessionArtist = jsonData.data[i].artist.name
+                    sessionXlImage = jsonData.data[i].album.cover_xl
                         //console.log(sessionValue)
-                    sessionStorage.setItem("sessionValue", sessionValue);
-                    sessionStorage.setItem("sessionImage", sessionImage);
+                    sessionStorage.setItem("sessionValue", sessionValue)
+                    sessionStorage.setItem("sessionImage", sessionImage)
+                    sessionStorage.setItem("sessionArtist", sessionArtist)
+                    sessionStorage.setItem("sessionXlImage", sessionXlImage)
                     location.href = 'album.html'
                 })
             }
+
+
 
 
             /*sessionStorage.setItem("selectedCard", selectedCard)
