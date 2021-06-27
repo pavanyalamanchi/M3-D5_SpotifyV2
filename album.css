@@ -1,0 +1,133 @@
+.grey-fade {
+    color: #919191;
+}
+
+.album-art {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    align-content: flex-end;
+}
+
+.album-image {
+    display: inline-block;
+    margin: 1.5em;
+    height: 200px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.album-info {
+    margin: 0 1.5em 1.5em 0;
+    /* font-size: 12px; */
+}
+
+.album-info span {
+    font-size: 12px;
+    color: #ededed;
+}
+
+#type {
+    font-size: 10px;
+}
+
+.album-title {
+    font-size: 3.4em;
+    font-weight: 700;
+    margin: 0 0 0px;
+    padding: 0 0 0 0;
+}
+
+#album-artist {
+    font-weight: 700;
+    color: white;
+}
+
+.album-action {
+    padding: 1em 1em;
+    display: flex;
+    align-items: center;
+}
+
+.album-action i {
+    padding: 0 15px;
+}
+
+.text-green {
+    color: #1DB954;
+}
+
+.album-container {
+    width: 100%;
+    padding: 0.25rem 2.5rem;
+}
+
+.album-table-header td {
+    font-size: 10px;
+}
+
+.album-tracks {
+    width: 100%;
+}
+
+.album-tracks tr {
+    font-size: 12px;
+}
+
+.album-tracks tr td h1 {
+    font-size: 12px;
+    line-height: 8px;
+    color: #fcfcfc;
+    padding: 5px 0 4px 0;
+    margin: 0;
+}
+
+.album-tracks tr td h2 {
+    font-size: 10px;
+    padding: 0 0 2px 0;
+    margin: 0;
+}
+
+.track td {
+    padding: 4.5px 0;
+}
+
+tr td {
+    padding: 0;
+}
+
+tr td div {
+    margin: 0px;
+}
+
+tr.track:hover {
+    background-color: #3d3d3d;
+    color: #fcfcfc;
+}
+
+td:first-child {
+    max-width: 15px;
+    padding: 0 0 0 15px;
+}
+
+thead {
+    height: 40px;
+}
+
+.grey-line {
+    width: 94%;
+    height: 1px;
+    background-color: #3d3d3d;
+    position: relative;
+    top: 33px;
+}
+
+#full-screen-fade {
+    z-index: -1;
+    height: 200%;
+    width: 100%;
+    /* background-color: red; */
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 65%, rgba(123, 82, 82, 1) 86%, rgba(255, 171, 171, 1) 100%);
+    position: absolute;
+}
