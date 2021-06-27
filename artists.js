@@ -5,6 +5,6 @@ window.onload = function() {
     let artistName = document.getElementsByClassName('artist-name')[0]
     artistName.innerHTML = sessionArtist
 
-    let bgImage = document.getElementsByClassName('img-fluid')[0]
-    bgImage.setAttribute('src', sessionXlImage)
+    //let bgImage = document.getElementsByClassName('img-fluid')[0]
+    //bgImage.setAttribute('src', sessionXlImage)
 }
