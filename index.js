@@ -1,5 +1,5 @@
 window.onload = function() {
-    fetch("https://deezerdevs-deezer.p.rapidapi.com/search?q=dua lipa", {
+    fetch("https://deezerdevs-deezer.p.rapidapi.com/search?q=billie eilish", {
             "method": "GET",
             "headers": {
                 "x-rapidapi-key": "b721fb7cb7mshc145aec713358ffp15a997jsneacfc76db713",
